@@ -399,3 +399,156 @@
         margin-top: 60px;
     }
 }
+
+/* ========================================
+   BUSINESS OS SHOWCASE
+======================================== */
+
+.business-os-showcase {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    border-radius: 30px;
+
+    padding: 48px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(135deg,
+            rgba(14, 165, 233, 0.10),
+            rgba(37, 99, 235, 0.08));
+
+    border:
+        1px solid rgba(14, 165, 233, 0.22);
+
+    box-shadow:
+        0 30px 70px rgba(15, 23, 42, 0.12);
+}
+
+.business-os-showcase::before {
+    content: "";
+
+    position: absolute;
+
+    top: -120px;
+    right: -120px;
+
+    width: 280px;
+    height: 280px;
+
+    background:
+        radial-gradient(circle,
+            rgba(110, 231, 249, 0.22),
+            transparent 70%);
+
+    pointer-events: none;
+}
+
+.business-os-content {
+    position: relative;
+    z-index: 2;
+}
+
+.business-os-tag {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(37, 99, 235, 0.10);
+
+    color: #2563eb;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.business-os-showcase h2 {
+    max-width: 900px;
+
+    margin-bottom: 18px;
+
+    font-size: clamp(2rem, 4vw, 3.2rem);
+
+    line-height: 1.1;
+
+    color: #0f172a;
+}
+
+.business-os-showcase p {
+    max-width: 900px;
+
+    margin-bottom: 28px;
+
+    color: #334155;
+
+    font-size: 1.02rem;
+
+    line-height: 1.8;
+}
+
+.business-os-modules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-bottom: 28px;
+}
+
+.business-os-modules span {
+    padding: 10px 16px;
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border:
+        1px solid rgba(15, 23, 42, 0.08);
+
+    color: #0f172a;
+
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.business-os-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.business-os-status {
+    color: #2563eb;
+    font-weight: 700;
+}
+
+@media (max-width: 680px) {
+
+    .business-os-showcase {
+        padding: 32px 22px;
+    }
+
+    .business-os-showcase h2 {
+        font-size: 2rem;
+    }
+
+    .business-os-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
