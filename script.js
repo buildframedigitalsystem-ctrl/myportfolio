@@ -272,7 +272,6 @@ const systemContent = document.getElementById("systemContent");
 if (systemTabs.length && systemContent) {
     systemTabs.forEach(tab => {
         tab.addEventListener("click", () => {
-
             systemTabs.forEach(btn => btn.classList.remove("active"));
             tab.classList.add("active");
 
@@ -289,7 +288,6 @@ if (systemTabs.length && systemContent) {
 /* =========================
    DEMO POPUP SYSTEM
 ========================= */
-
 const demoData = {
     mn: {
         title: "M&N Consumer Goods Platform",
@@ -353,7 +351,6 @@ window.addEventListener("click", (e) => {
 /* =========================
    BUSINESS ASSESSMENT LOGIC
 ========================= */
-
 const analyzeBtn = document.getElementById("analyzeBtn");
 
 const assessmentRecommendations = {
@@ -393,7 +390,6 @@ const assessmentRecommendations = {
 
 if (analyzeBtn) {
     analyzeBtn.addEventListener("click", () => {
-
         const checked = document.querySelectorAll(".assessment-options input:checked");
         const resultBox = document.getElementById("assessmentResult");
 
