@@ -304,25 +304,45 @@
 
 .upcoming-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 24px;
     margin-top: 40px;
+    align-items: stretch;
 }
 
 .upcoming-grid .project-card {
-    min-height: 360px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* UNIFORM CARD CONTENT */
+
+.upcoming-card h3 {
+    min-height: 72px;
+}
+
+.upcoming-card p {
+    min-height: 120px;
 }
 
 /* TABLET */
+
 @media (max-width: 1100px) {
+
     .upcoming-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 /* MOBILE */
+
 @media (max-width: 680px) {
+
     .upcoming-grid {
         grid-template-columns: 1fr;
     }
+
 }
