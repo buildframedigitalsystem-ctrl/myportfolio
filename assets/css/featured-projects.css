@@ -304,24 +304,28 @@
 
 .upcoming-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 40px;
     align-items: stretch;
 }
 
+/* SAME CLEAN CARD STYLE AS FEATURED PROJECTS */
+
 .upcoming-grid .project-card {
-    min-height: 340px;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* UNIFORM CARD CONTENT */
+/* UNIFORM TITLE HEIGHT */
 
 .upcoming-card h3 {
-    min-height: 72px;
+    min-height: 90px;
 }
+
+/* UNIFORM DESCRIPTION HEIGHT */
 
 .upcoming-card p {
     min-height: 120px;
