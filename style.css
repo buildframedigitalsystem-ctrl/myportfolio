@@ -890,3 +890,174 @@ a {
     overflow: hidden;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
+
+/* =====================================================
+   PORTFOLIO RESPONSIVE SAFETY PATCH
+   Add this at the VERY BOTTOM only
+===================================================== */
+
+img,
+video,
+iframe {
+    max-width: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section,
+main,
+header,
+footer {
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    .header-wrap {
+        width: min(100% - 28px, var(--max-width));
+        margin: 0 auto;
+    }
+
+    .brand {
+        min-width: 0;
+    }
+
+    .brand-text strong,
+    .brand-text span {
+        white-space: normal;
+    }
+
+    .hero,
+    .section,
+    .system-experience {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero-buttons,
+    .demo-actions,
+    .thankyou-buttons {
+        width: 100%;
+    }
+
+    .btn,
+    .bf-btn {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .main-nav {
+        left: 16px;
+        right: 16px;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 68px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 26px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(1.75rem, 8vw, 2.35rem);
+        line-height: 1.15;
+    }
+
+    .section-heading p,
+    p,
+    li {
+        font-size: 0.95rem;
+    }
+
+    .system-content,
+    .assessment-result,
+    .demo-modal-box,
+    .thankyou-card {
+        border-radius: 20px;
+    }
+
+    .hero-buttons,
+    .demo-actions,
+    .assessment-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn,
+    .demo-actions .btn,
+    .assessment-actions .btn,
+    .thankyou-buttons .btn {
+        width: 100%;
+    }
+
+    .facebook-embed iframe,
+    .about-facebook-embed iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container,
+    .bf-container {
+        width: min(100% - 24px, var(--max-width));
+    }
+
+    .brand-logo {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .brand-text strong {
+        font-size: 0.9rem;
+    }
+
+    .brand-text span {
+        font-size: 0.72rem;
+    }
+
+    .section {
+        padding: 58px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 1.75rem;
+    }
+
+    .system-content,
+    .assessment-result {
+        padding: 20px 16px;
+    }
+
+    .demo-modal {
+        padding: 14px;
+    }
+
+    .demo-modal-box {
+        padding: 28px 20px;
+    }
+
+    .thankyou-body {
+        padding: 18px;
+    }
+
+    .thankyou-card {
+        padding: 42px 22px;
+    }
+
+    .messenger-float {
+        width: 54px;
+        height: 54px;
+        right: 14px;
+        bottom: 14px;
+    }
+}
