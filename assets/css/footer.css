@@ -1,74 +1,245 @@
-/* FOOTER */
+/* =====================================================
+   BUILDFRAME FOOTER
+   File: footer.css
+===================================================== */
+
 .site-footer {
+    position: relative;
+
     border-top: 1px solid var(--line);
-    padding: 60px 0 28px;
-    background: linear-gradient(180deg, rgba(7, 17, 31, 0.95), rgba(10, 22, 38, 0.95));
+
+    padding: 34px 0 18px;
+
+    background:
+        linear-gradient(180deg,
+            rgba(7, 17, 31, 0.98),
+            rgba(10, 22, 38, 0.98));
+
+    color: #ffffff;
 }
+
+
+/* =====================================================
+   MAIN FOOTER LAYOUT
+===================================================== */
 
 .footer-wrap {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
+
     gap: 40px;
+
     flex-wrap: wrap;
 }
 
-.footer-main h3 {
-    margin-bottom: 6px;
+
+/* =====================================================
+   LEFT SIDE
+===================================================== */
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 340px;
 }
 
-.footer-main p {
+.footer-left h3 {
+    margin: 0 0 6px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.footer-left p {
+    margin: 0;
+
     color: var(--muted);
-    margin-bottom: 12px;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
-.footer-powered {
-    font-size: 0.92rem;
+
+/* =====================================================
+   OPTIONAL SMALL PROMOTIONAL LOGO
+===================================================== */
+
+.footer-brand-row {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.footer-promo-logo {
+    display: block;
+
+    width: 54px;
+    height: 54px;
+
+    flex: 0 0 54px;
+
+    border-radius: 14px;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   RIGHT SIDE
+===================================================== */
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    max-width: 680px;
+}
+
+.footer-right>p {
+    margin: 0 0 12px;
+
     color: var(--primary-2);
-    line-height: 1.7;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.92rem;
 }
 
-.footer-powered span {
-    color: var(--muted);
-}
+
+/* =====================================================
+   CONTACT LINKS
+===================================================== */
 
 .footer-contact {
     display: flex;
-    gap: 40px;
+    align-items: center;
+
+    gap: 12px 24px;
+
     flex-wrap: wrap;
 }
 
-.footer-group h4 {
-    margin-bottom: 10px;
-    font-size: 0.95rem;
-    color: var(--primary-2);
-    font-family: 'Poppins', sans-serif;
-}
+.footer-contact a {
+    display: inline-flex;
+    align-items: center;
 
-.footer-group a {
+    gap: 8px;
+
     color: var(--muted);
-    font-size: 0.9rem;
-    transition: 0.2s ease;
+
+    font-size: 0.86rem;
+    line-height: 1.4;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
-.footer-group a:hover {
+.footer-contact a:hover {
     color: var(--accent);
+
+    transform: translateY(-1px);
 }
+
+.footer-contact i {
+    color: var(--primary-2);
+
+    font-size: 0.98rem;
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
 
 .footer-bottom {
+    max-width: 1200px;
+
+    margin: 22px auto 0;
+    padding-top: 16px;
+
+    border-top: 1px solid rgba(148, 163, 184, 0.12);
+
     text-align: center;
-    margin-top: 26px;
-    font-size: 0.85rem;
-    color: var(--muted);
 }
 
+.footer-bottom p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 0.78rem;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
 @media (max-width: 820px) {
+    .site-footer {
+        padding: 30px 0 18px;
+    }
+
     .footer-wrap {
         flex-direction: column;
-        gap: 30px;
+
+        gap: 24px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer-contact {
+        gap: 12px 18px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 620px) {
+    .site-footer {
+        padding: 26px 0 16px;
+    }
+
+    .footer-wrap {
+        gap: 22px;
+    }
+
+    .footer-brand-row {
+        align-items: flex-start;
+    }
+
+    .footer-promo-logo {
+        width: 46px;
+        height: 46px;
+
+        flex-basis: 46px;
     }
 
     .footer-contact {
         flex-direction: column;
-        gap: 20px;
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        padding-top: 14px;
     }
 }
