@@ -177,9 +177,9 @@
     }
 
     /* =====================================================
-       PROFESSOR OWL
-       ONE VISIBLE GUIDED AI CHAT EXPERIENCE
-    ===================================================== */
+   PROFESSOR OWL
+   ONE VISIBLE GUIDED AI CHAT EXPERIENCE
+===================================================== */
 
     function createProfessorOwlMarkup() {
         if (
@@ -200,126 +200,132 @@
         );
 
         wrapper.innerHTML = `
-            <button
-                class="partner-prof-launcher"
-                type="button"
-                data-partner-prof-launcher
-                aria-expanded="false"
-                aria-label="Ask Professor Owl AI"
-            >
-                <span
-                    class="partner-prof-avatar"
-                    aria-hidden="true"
-                >
-                    🦉
-                </span>
-
-                <span class="partner-prof-launcher-copy">
-                    <span class="partner-prof-launcher-title">
-                        Ask Professor Owl AI
-                    </span>
-
-                    <span class="partner-prof-launcher-subtitle">
-                        BuildFrame AI Workshop Guide
-                    </span>
-                </span>
-            </button>
-
-            <section
-                class="partner-prof-panel"
-                data-partner-prof-panel
+        <button
+            class="partner-prof-launcher"
+            type="button"
+            data-partner-prof-launcher
+            aria-expanded="false"
+            aria-label="Ask Professor Owl AI"
+        >
+            <span
+                class="partner-prof-avatar"
                 aria-hidden="true"
-                aria-label="Professor Owl AI chat"
             >
-                <header
-                    class="partner-prof-header"
-                    data-partner-prof-drag-handle
+                <img
+                    src="${BASE_PATH}../assets/images/professor-owl.png"
+                    alt=""
                 >
-                    <div class="partner-prof-identity">
-                        <span
-                            class="partner-prof-header-avatar"
-                            aria-hidden="true"
-                        >
-                            🦉
-                        </span>
+            </span>
 
-                        <div class="partner-prof-header-copy">
-                            <h2 class="partner-prof-header-title">
-                                Professor Owl
-                            </h2>
+            <span class="partner-prof-launcher-copy">
+                <span class="partner-prof-launcher-title">
+                    Ask Professor Owl AI
+                </span>
 
-                            <p class="partner-prof-header-subtitle">
-                                BuildFrame AI Workshop Guide
-                            </p>
-                        </div>
-                    </div>
+                <span class="partner-prof-launcher-subtitle">
+                    BuildFrame AI Workshop Guide
+                </span>
+            </span>
+        </button>
 
-                    <div class="partner-prof-header-actions">
-                        <a
-                            class="partner-prof-center-link"
-                            href="${AI_CENTER_URL}"
-                            aria-label="Open the full Professor Owl AI Center"
-                        >
-                            AI Center
-                        </a>
-
-                        <button
-                            class="partner-prof-close"
-                            type="button"
-                            data-partner-prof-close
-                            aria-label="Close Professor Owl AI"
-                        >
-                            ×
-                        </button>
-                    </div>
-                </header>
-
-                <div
-                    class="partner-prof-messages"
-                    data-partner-prof-messages
-                    aria-live="polite"
-                ></div>
-
-                <div
-                    class="partner-prof-suggestions"
-                    data-partner-prof-suggestions
-                    aria-label="Guided conversation choices"
-                ></div>
-
-                <div class="partner-prof-human-support">
-                    <a
-                        class="partner-prof-messenger-link"
-                        href="${FACEBOOK_PAGE_URL}"
-                        target="_blank"
-                        rel="noopener noreferrer"
+        <section
+            class="partner-prof-panel"
+            data-partner-prof-panel
+            aria-hidden="true"
+            aria-label="Professor Owl AI chat"
+        >
+            <header
+                class="partner-prof-header"
+                data-partner-prof-drag-handle
+            >
+                <div class="partner-prof-identity">
+                    <span
+                        class="partner-prof-header-avatar"
+                        aria-hidden="true"
                     >
-                        Prefer a real person? Chat with us on Facebook Messenger.
-                    </a>
+                        <img
+                            src="${BASE_PATH}../assets/images/professor-owl.png"
+                            alt=""
+                        >
+                    </span>
+
+                    <div class="partner-prof-header-copy">
+                        <h2 class="partner-prof-header-title">
+                            Professor Owl
+                        </h2>
+
+                        <p class="partner-prof-header-subtitle">
+                            BuildFrame AI Workshop Guide
+                        </p>
+                    </div>
                 </div>
 
-                <form
-                    class="partner-prof-form"
-                    data-partner-prof-form
-                >
-                    <input
-                        class="partner-prof-input"
-                        data-partner-prof-input
-                        type="text"
-                        placeholder="Or type your own question..."
-                        autocomplete="off"
-                        aria-label="Message Professor Owl"
-                    />
+                <div class="partner-prof-header-actions">
+                    <a
+                        class="partner-prof-center-link"
+                        href="${AI_CENTER_URL}"
+                        aria-label="Open the full Professor Owl AI Center"
+                    >
+                        AI Center
+                    </a>
 
                     <button
-                        class="partner-prof-send"
-                        type="submit"
-                        aria-label="Send message to Professor Owl"
+                        class="partner-prof-close"
+                        type="button"
+                        data-partner-prof-close
+                        aria-label="Close Professor Owl AI"
                     >
-                        ➜
+                        ×
                     </button>
-                </form>
-            </section>
-        `;
+                </div>
+            </header>
+
+            <div
+                class="partner-prof-messages"
+                data-partner-prof-messages
+                aria-live="polite"
+            ></div>
+
+            <div
+                class="partner-prof-suggestions"
+                data-partner-prof-suggestions
+                aria-label="Guided conversation choices"
+            ></div>
+
+            <div class="partner-prof-human-support">
+                <a
+                    class="partner-prof-messenger-link"
+                    href="${FACEBOOK_PAGE_URL}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Prefer a real person? Chat with us on Facebook Messenger.
+                </a>
+            </div>
+
+            <form
+                class="partner-prof-form"
+                data-partner-prof-form
+            >
+                <input
+                    class="partner-prof-input"
+                    data-partner-prof-input
+                    type="text"
+                    placeholder="Or type your own question..."
+                    autocomplete="off"
+                    aria-label="Message Professor Owl"
+                />
+
+                <button
+                    class="partner-prof-send"
+                    type="submit"
+                    aria-label="Send message to Professor Owl"
+                >
+                    ➜
+                </button>
+            </form>
+        </section>
+    `;
 
         document.body.appendChild(wrapper);
     }
