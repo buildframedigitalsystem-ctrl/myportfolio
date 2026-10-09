@@ -184,3 +184,81 @@
         padding-top: 58px;
     }
 }
+
+/* =====================================================
+   BUILDFRAME PORTFOLIO
+   MOBILE PORTRAIT HERO FIX
+   Fixes the two-column split on mobile phones.
+
+   Desktop: unchanged
+   Landscape: unchanged
+===================================================== */
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+    /* Change desktop split into one full-width column */
+    .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Make both hero sections occupy full width */
+    .hero-left,
+    .hero-right,
+    .hero-panel,
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Make headline comfortable to read */
+    .hero-left h1 {
+        font-size: clamp(2rem, 8vw, 2.7rem);
+        line-height: 1.15;
+        overflow-wrap: break-word;
+    }
+
+    /* Improve paragraph readability */
+    .hero-text {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+    /* Keep buttons organized */
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    /* Remove oversized panel scaling */
+    .hero-panel {
+        transform: none;
+        padding: 22px;
+    }
+
+    /* Resize Professor Owl */
+    .hero-logo {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* Improve visual panel spacing */
+    .hero-visual {
+        padding: 24px 18px;
+    }
+
+    /* Give the hero comfortable spacing */
+    .hero-section {
+        padding: 48px 0 64px;
+    }
+
+}
