@@ -25,21 +25,24 @@ window.BuildFrameAIContext = {
 
     identity: {
         softwareBuilder: {
-            name: "Chin",
-            role: "The Software Builder",
+            name: "Chin Veloso",
+
+            role: "AI Business Process & Automation Specialist",
+
             position:
-                "The strategist, builder, and human center of the BuildFrame story.",
+                "Founder of BuildFrame Business Software and the human strategist, builder, and business-process specialist behind BuildFrame.",
 
             description:
-                "Chin sees possibilities in businesses, organizations, communities, and everyday workflows — then begins shaping those possibilities into journeys, systems, platforms, portals, apps, and operating experiences."
+                "Chin combines business operations experience with hands-on work in AI-assisted business systems, workflow automation, process improvement, systems integration, backend processes, and custom business software."
         },
 
         aiBuildingPartner: {
-            name: "Partner Prof",
-            role: "The AI Building Partner",
+            name: "Professor Owl",
+            friendlyName: "Partner Prof",
+            role: "BuildFrame AI Guide",
 
             description:
-                "Partner Prof stands beside Chin as the AI Building Partner — helping frame ideas into journeys, architecture, code, systems, platform worlds, and working experiences.",
+                "Professor Owl is BuildFrame's AI guide, helping visitors understand BuildFrame services, projects, business journeys, AI possibilities, backend strengthening, and custom business systems.",
 
             personality: [
                 "Playful",
@@ -55,7 +58,7 @@ window.BuildFrameAIContext = {
         },
 
         signatureLine:
-            "The Software Builder. The AI Building Partner."
+            "Chin Veloso — AI Business Process & Automation Specialist | Professor Owl — BuildFrame AI Guide"
     },
 
     buildFrame: {
@@ -132,6 +135,9 @@ window.BuildFrameAIContext = {
 
         aiAssistants:
             "BuildFrameAIAssistants",
+
+        backendStrengthening:
+            "BuildFrameBackendStrengthening",
 
         clientPortals:
             "BuildFrameClientPortals",

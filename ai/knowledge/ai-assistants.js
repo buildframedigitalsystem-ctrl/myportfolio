@@ -1,244 +1,483 @@
-/* =====================================================
+/* =========================================================
    BUILDFRAME AI KNOWLEDGE
    File: ai/knowledge/ai-assistants.js
-   Purpose: Partner Prof knowledge for AI Assistants,
-            AI VAs, platform-aware guidance, customer
-            journeys, support, insights, and operations.
-===================================================== */
+
+   Purpose:
+   BuildFrame knowledge for AI Installation & Tailoring,
+   AI Assistants, Chatbots, AI Features, AI-Assisted
+   Workflows, specialized AI VAs, and Human + AI Assist.
+
+   IMPORTANT:
+   AI Installation & Tailoring is a current BuildFrame
+   service direction.
+
+   Individual AI capabilities must still be described
+   honestly as built, configurable, experimental, planned,
+   or conceptual depending on their actual status.
+========================================================= */
 
 window.BuildFrameAIAssistants = {
+
     id: "ai-assistants",
-    name: "AI Assistants & AI VAs",
-    status: "Currently Being Framed / Future Configurable AI Direction",
+
+    name: "AI Installation & Tailoring",
+
+    status: "Current BuildFrame Service",
+
+    serviceSummary:
+        "BuildFrame helps businesses install and tailor AI assistants, chatbots, AI features, and AI-assisted workflows around their actual business processes, information, users, permissions, and human approval requirements.",
 
     teaser:
-        "AI should not feel like a random chatbot pasted onto a website. It should understand where it is, who it is helping, what journey the person is on, and what the business actually needs.",
+        "AI should not feel like a random chatbot pasted onto a website. It should understand the business it represents, who it is helping, what journey the person is on, what information it is allowed to use, and when a human should take over.",
 
     experienceStory:
-        "Imagine a customer asking a question and receiving guidance that understands the correct business, service, project, order, lesson, survey, or journey. Imagine an owner opening a workspace and meeting an AI assistant that can help explain reports, guide setup, support customers, organize inquiries, and eventually assist with everyday business operations.",
+        "Imagine an AI assistant that understands your services, common customer questions, business processes, available information, and the next steps in a customer or staff journey. Instead of forcing your business into a generic AI tool, BuildFrame can help shape the AI around the way your business actually works.",
 
     coreVision:
-        "BuildFrame AI Assistants are envisioned as specialized AI partners that understand the correct platform, business context, user role, customer journey, and available evidence instead of behaving like one generic chatbot for everything.",
+        "BuildFrame AI Installation & Tailoring focuses on fitting useful AI capabilities into real business workflows. The goal is not to add AI everywhere. The goal is to identify where AI can provide practical assistance while preserving appropriate human judgment, approvals, permissions, and safeguards.",
 
-    partnerProfIdentity: {
-        name: "Partner Prof",
-        title: "Chin's AI Building Partner",
 
-        status:
-            "Currently being framed as the AI identity and knowledge layer for the BuildFrame portfolio.",
+    /* =====================================================
+       WHAT AI INSTALLATION & TAILORING CAN INCLUDE
+    ===================================================== */
 
-        story:
-            "Partner Prof is not a fictional marketing mascot. He represents the real long-term collaboration behind BuildFrame: Chin brings ideas — often calling them tiny ideas — and Partner Prof helps frame them into journeys, architecture, code, systems, platforms, and working experiences.",
+    serviceCapabilities: [
 
-        relationship:
-            "The portfolio remains centered on Chin. Partner Prof stands beside her as her AI Building Partner, helping visitors understand the thinking, journeys, evidence, possibilities, and future directions behind BuildFrame.",
+        {
+            type: "Business AI Assistant",
+            description:
+                "An AI assistant tailored around the business, its services, information, common questions, workflows, and approved knowledge."
+        },
 
-        personality: [
-            "Playful",
-            "Warm",
-            "Intelligent",
-            "Knowledgeable",
-            "Curious",
-            "Gently teasing",
-            "Never aggressively salesy",
-            "Honest about what is complete and what is still being built"
-        ],
+        {
+            type: "Website Chatbot",
+            description:
+                "A website-based AI assistant that can guide visitors, answer supported questions, explain services, collect useful information, and direct people toward appropriate next steps."
+        },
 
-        signatureSpirit:
-            "Chin brings tiny ideas. They rarely stay tiny."
+        {
+            type: "Customer Support Assistant",
+            description:
+                "AI assistance for common customer questions, service guidance, onboarding information, process explanations, and supported customer journeys, with human escalation when needed."
+        },
+
+        {
+            type: "Internal Knowledge Assistant",
+            description:
+                "An AI assistant designed to help staff find and understand approved business information, procedures, services, workflows, or internal guidance."
+        },
+
+        {
+            type: "AI-Assisted Workflow",
+            description:
+                "AI can assist at selected points inside a workflow such as organizing information, preparing drafts, summarizing records, suggesting next steps, or helping classify incoming requests."
+        },
+
+        {
+            type: "Onboarding Assistant",
+            description:
+                "AI can guide customers, staff, learners, or business users through structured onboarding one step at a time."
+        },
+
+        {
+            type: "Report & Information Explainer",
+            description:
+                "AI can help explain supported reports, structured information, survey results, operational records, or business data in easier language."
+        },
+
+        {
+            type: "Specialized AI VA",
+            description:
+                "Where appropriate, an AI assistant can be tailored around a specific responsibility or journey instead of trying to make one AI perform every business function."
+        }
+
+    ],
+
+
+    /* =====================================================
+       BUILDFRAME INSTALLATION APPROACH
+    ===================================================== */
+
+    installationApproach: {
+
+        principle:
+            "Understand the business before installing the AI.",
+
+        steps: [
+
+            {
+                step: 1,
+                name: "Understand the Business",
+                description:
+                    "Learn what the business does, who it serves, what systems it currently uses, and what the owner or team wants to improve."
+            },
+
+            {
+                step: 2,
+                name: "Map the Workflow",
+                description:
+                    "Understand the current journey before deciding where AI belongs."
+            },
+
+            {
+                step: 3,
+                name: "Identify AI Opportunities",
+                description:
+                    "Find repetitive questions, information-heavy tasks, guidance needs, workflow bottlenecks, or other areas where AI assistance may be useful."
+            },
+
+            {
+                step: 4,
+                name: "Define Knowledge & Boundaries",
+                description:
+                    "Determine what information the AI may use, what it should not access, what it may suggest, and what must remain under human control."
+            },
+
+            {
+                step: 5,
+                name: "Install or Integrate",
+                description:
+                    "Connect the AI experience to the appropriate website, portal, workflow, application, or business system where technically suitable."
+            },
+
+            {
+                step: 6,
+                name: "Tailor the Experience",
+                description:
+                    "Adjust the AI's business knowledge, guidance, response style, workflow awareness, permissions, and supported journeys."
+            },
+
+            {
+                step: 7,
+                name: "Test & Validate",
+                description:
+                    "Test supported questions, workflow behavior, boundaries, fallbacks, human handoffs, and relevant integrations before relying on the experience."
+            },
+
+            {
+                step: 8,
+                name: "Improve Over Time",
+                description:
+                    "AI assistance can be refined as the business changes, new information becomes available, and useful new workflows are identified."
+            }
+
+        ]
     },
 
+
+    /* =====================================================
+       EXISTING SYSTEMS
+    ===================================================== */
+
+    existingSystemIntegration: {
+
+        principle:
+            "AI Installation & Tailoring does not automatically require replacing the business's existing system.",
+
+        explanation:
+            "BuildFrame can first assess the website, CRM, platform, software, workflow, or other digital tools the business already uses. Where technically appropriate, useful AI capabilities may be added, integrated, or connected while keeping systems that already work.",
+
+        questions: [
+            "What systems are you already using?",
+            "What is working well today?",
+            "What tasks remain repetitive or manual?",
+            "Where do customers or staff repeatedly need help?",
+            "What information should the AI be allowed to use?",
+            "Which actions require human approval?",
+            "Where would AI assistance save useful time without removing necessary human judgment?"
+        ]
+    },
+
+
+    /* =====================================================
+       HUMAN + AI ASSIST
+    ===================================================== */
+
+    humanAndAI: {
+
+        principle:
+            "Human + AI Assist",
+
+        explanation:
+            "BuildFrame treats AI as an assistant to people rather than an automatic replacement for human judgment. AI may help organize, explain, suggest, draft, guide, summarize, or support repetitive processes while people remain responsible for decisions that require judgment, accountability, relationships, safety, professional expertise, or approval.",
+
+        humanControlExamples: [
+            "Important approvals",
+            "Pricing or contractual commitments",
+            "Financial decisions",
+            "Sensitive customer situations",
+            "Professional judgment",
+            "Safety-related decisions",
+            "Exceptions",
+            "Permission changes",
+            "High-impact business actions"
+        ]
+    },
+
+
+    /* =====================================================
+       AI ASSISTANT TYPES
+    ===================================================== */
+
     aiAssistantTypes: [
+
         {
             type: "Platform Guide",
             experience:
-                "An AI guide could help users understand where they are, what the platform can do, and what their next step should be."
+                "An AI guide can help users understand where they are, what supported parts of the platform can do, and what their next step may be."
         },
+
         {
             type: "Customer Support Assistant",
             experience:
-                "Customers could ask questions about services, orders, bookings, project updates, learning journeys, or account processes without immediately waiting for a human reply."
+                "Customers can receive assistance with supported questions about services, bookings, processes, orders, project journeys, learning journeys, or account guidance."
         },
+
         {
             type: "Onboarding Assistant",
             experience:
-                "A new business owner could be guided through setup one step at a time instead of facing a large empty dashboard."
+                "A new user can be guided through an approved setup or onboarding journey one step at a time."
         },
+
         {
-            type: "Sales Helper",
+            type: "Sales Support Assistant",
             experience:
-                "Instead of aggressively pushing products, the AI could understand what a visitor is trying to achieve, ask useful questions, and guide them toward relevant possibilities."
+                "AI can help understand what a visitor is trying to accomplish, collect useful information, explain relevant services, and prepare the journey for appropriate human follow-up."
         },
+
         {
             type: "Report Explainer",
             experience:
-                "A business owner could ask what a chart, survey result, sales report, inventory movement, or customer trend actually means."
+                "AI can help explain supported charts, survey results, operational information, or structured reports without pretending that every automated interpretation is certain."
         },
+
         {
-            type: "Insights Assistant",
+            type: "Internal Staff Guide",
             experience:
-                "The AI could help identify patterns, unusual activity, opportunities, or questions worth investigating."
+                "An AI assistant can help staff navigate approved business information, processes, procedures, and internal knowledge."
         },
+
         {
             type: "Specialized AI VA",
             experience:
-                "A business could eventually have AI virtual assistants shaped for specific responsibilities such as customer inquiries, bookings, order support, follow-ups, onboarding, or internal guidance."
+                "An AI assistant can be shaped around a specific supported responsibility such as inquiries, onboarding, follow-up guidance, customer support, or internal assistance."
         },
+
         {
             type: "Workspace-Aware Assistant",
             experience:
-                "The AI could understand the correct workspace, business, platform, user role, and current journey before responding."
+                "Where the system supports it, AI can use appropriate context such as the correct workspace, business, user role, page, journey, and permitted information."
         }
+
     ],
 
-    platformPossibilities: [
+
+    /* =====================================================
+       BUSINESS EXAMPLES
+    ===================================================== */
+
+    businessExamples: [
+
         {
-            platform: "Surveys & Insights",
-            experience:
-                "An AI assistant could explain questionnaire results, summarize response patterns, help owners understand charts, and eventually surface useful insights without pretending every automated conclusion is certain."
+            business: "Coaches & Consultants",
+            possibilities: [
+                "Program information assistant",
+                "Lead inquiry guidance",
+                "Client onboarding assistant",
+                "Learning or resource guide",
+                "Frequently asked questions",
+                "Human follow-up preparation"
+            ]
         },
+
         {
-            platform: "Food Business OS",
-            experience:
-                "An AI assistant could guide owners through business setup, help explain store configuration, support customer questions, and eventually assist with products, orders, and operational journeys."
+            business: "Content Creators",
+            possibilities: [
+                "Audience information assistant",
+                "Content workflow assistance",
+                "Tutorial or resource guide",
+                "Knowledge-based chatbot",
+                "Content organization support"
+            ]
         },
+
         {
-            platform: "Professionals & Services",
-            experience:
-                "A service AI could answer common questions, guide customers toward the right service, help with bookings, collect intake details, explain status updates, and support follow-ups."
+            business: "Professional Services",
+            possibilities: [
+                "Service inquiry assistant",
+                "Client intake guidance",
+                "Appointment or booking guidance",
+                "Frequently asked questions",
+                "Client onboarding support"
+            ]
         },
+
         {
-            platform: "Construction & Contractors",
-            experience:
-                "A specialized AI could guide project inquiries, help customers describe work clearly, collect photos or plans, explain proposal steps, assist with preliminary estimate journeys, and support project-status questions."
+            business: "Construction & Contractors",
+            possibilities: [
+                "Project inquiry guidance",
+                "Customer intake assistance",
+                "Service explanation",
+                "Project-process guidance",
+                "Document or information checklist guidance",
+                "Customer support and human escalation"
+            ]
         },
+
         {
-            platform: "Education & Academy",
-            experience:
-                "An academy AI could guide learners, explain where to find lessons, remind them of progress, support tutorials, answer platform questions, and help instructors or admins understand learning activity."
+            business: "Education & Academy",
+            possibilities: [
+                "Learner guide",
+                "Course navigation assistance",
+                "Tutorial support",
+                "Frequently asked questions",
+                "Student onboarding guidance"
+            ]
         },
+
         {
-            platform: "Business Operations",
-            experience:
-                "An operations AI could help owners understand inventory, orders, payments, supplier activity, reports, and what may need attention."
-        },
-        {
-            platform: "Client Portals",
-            experience:
-                "A portal AI could help customers understand bookings, orders, project milestones, documents, approvals, payments, service status, or learning progress."
+            business: "Retail & Operations",
+            possibilities: [
+                "Product information assistance",
+                "Customer support",
+                "Order-process guidance",
+                "Internal knowledge assistance",
+                "Operational information support"
+            ]
         }
+
     ],
 
-    aiVAWorld: {
-        teaser:
-            "The future is not necessarily one AI doing everything. A business may eventually have several specialized AI VAs, each responsible for a particular journey.",
 
-        examples: [
-            "Customer inquiry AI VA",
-            "Booking AI VA",
-            "Sales inquiry AI VA",
-            "Order support AI VA",
-            "Onboarding AI VA",
-            "Follow-up AI VA",
-            "Survey insights AI VA",
-            "Report explainer AI VA",
-            "Learning guide AI VA",
-            "Construction inquiry AI VA",
-            "Project-status AI VA",
-            "Inventory assistant AI VA",
-            "Internal staff guide AI VA"
-        ],
+    /* =====================================================
+       PARTNER PROF / PROFESSOR OWL
+    ===================================================== */
 
-        experienceStory:
-            "Imagine a growing business starting without a large support team. A customer asks about a service, another needs help with an order, another wants to book, and an owner wants a report explained. Specialized AI VAs could help handle the right journeys while humans remain available for decisions, exceptions, relationships, and situations requiring judgment."
+    partnerProfIdentity: {
+
+        name: "Professor Owl",
+
+        friendlyName: "Partner Prof",
+
+        title: "BuildFrame AI Guide",
+
+        status:
+            "Working BuildFrame portfolio AI experience and demonstration of BuildFrame's approach to guided, business-aware AI assistance.",
+
+        story:
+            "Professor Owl helps visitors explore BuildFrame, understand services and projects, ask questions, and discover how AI-assisted business experiences can be structured around useful knowledge and guided journeys.",
+
+        relationship:
+            "The portfolio remains centered on Chin Veloso and BuildFrame. Professor Owl demonstrates the Human + AI Assist approach by helping visitors while still providing pathways to human assistance."
     },
 
-    humanAndAIPrinciple:
-        "AI should support people, not pretend that every business decision can or should be automated. Important approvals, sensitive situations, exceptions, financial decisions, professional judgment, and human relationships may still require a real person.",
+
+    /* =====================================================
+       CONTEXT AWARENESS
+    ===================================================== */
 
     contextAwareness: {
-        vision:
-            "Future BuildFrame AI should know enough context to avoid answering blindly.",
+
+        principle:
+            "An AI assistant should use only the context it needs and is permitted to use.",
 
         possibleContext: [
+            "Current business",
             "Current platform",
             "Current workspace",
-            "Current business",
-            "Current user",
-            "User role",
-            "Current customer",
-            "Current journey",
             "Current page",
+            "Current journey",
+            "User role",
+            "Approved business knowledge",
             "Available products or services",
-            "Relevant project status",
-            "Relevant order status",
-            "Relevant booking status",
-            "Relevant learning progress",
-            "Relevant survey or report",
+            "Supported project information",
+            "Supported booking information",
+            "Supported order information",
+            "Supported reports",
             "Permission boundaries"
         ]
     },
 
+
+    /* =====================================================
+       PROOF CONNECTIONS
+    ===================================================== */
+
     proofConnections: [
+
+        {
+            project: "Professor Owl",
+            connection:
+                "Provides a working BuildFrame example of a guided portfolio AI experience with business knowledge, free-text interaction, guided conversation, and human-assistance pathways."
+        },
+
+        {
+            project: "BuildFrame Business Software",
+            connection:
+                "Provides the broader modular business-system direction where AI assistance can be integrated into workflows and business processes."
+        },
+
         {
             project: "BuildFrame Surveys Platform",
             connection:
-                "Provides real questionnaire, respondent, analytics, chart, and reporting journeys that future AI insights and report explainers can build upon."
+                "Provides structured questionnaire, response, analytics, chart, and reporting journeys that can support future AI-assisted explanation and insights."
         },
+
         {
-            project: "Food Business OS",
+            project: "Build My Online Food Business",
             connection:
-                "Provides guided setup, products, pricing, cart, checkout, customer orders, live-store flow, and owner workspace journeys that future AI guidance can support."
+                "Provides guided setup, products, pricing, ordering, customer, and owner-workspace journeys where tailored AI guidance may support future workflows."
         },
+
         {
             project: "M&N Consumer Goods",
             connection:
-                "Provides real operational evidence across products, inventory, suppliers, purchase orders, receiving, orders, invoices, payments, deliveries, returns, agents, and reports."
-        },
-        {
-            project: "Tides of Hope",
-            connection:
-                "Provides evidence of member journeys, profiles, directories, content management, galleries, announcements, role-based access, and community experiences."
-        },
-        {
-            project: "One Leyte for Sara Duterte",
-            connection:
-                "Preserved as a real public-facing project in Chin's building history."
-        },
-        {
-            project: "TinyTeam Genealogy",
-            connection:
-                "Preserved only as a private project. Do not expose private details."
-        },
-        {
-            project: "Construction and Contractor Trade Experiences",
-            connection:
-                "These early explorations helped form the future vision for specialized contractor inquiries, estimates, client journeys, and construction-focused AI assistance."
+                "Provides operational workflow examples involving products, inventory, suppliers, purchase orders, receiving, orders, invoices, payments, deliveries, returns, and reporting."
         }
+
     ],
 
-    buildFramePrinciple:
-        "Journey Before Features. Before deciding what an AI assistant should do, understand who it is helping, where they are, what they are trying to accomplish, what information it is allowed to use, and when a human should take over.",
 
-    proofBeforeHype:
-        "Do not pretend that every future AI VA, automated insight, workspace-aware assistant, or specialized AI capability is already complete. Use existing BuildFrame systems as evidence of the real journeys and data structures these future AI experiences can grow from.",
-
-    partnerProfVoice:
-        "I am not here to pretend every business needs a robot army. Sometimes one helpful guide is enough. Sometimes a growing platform may eventually need several specialized AI VAs. The interesting question is not 'How much AI can we add?' It is 'Where could the right kind of help make the journey beautifully easier?'",
+    /* =====================================================
+       BOUNDARIES
+    ===================================================== */
 
     boundaries: [
-        "Do not claim every AI assistant or AI VA described here is already built.",
-        "Partner Prof is currently being framed as Chin's AI Building Partner and portfolio AI knowledge layer.",
-        "Distinguish clearly between working evidence, active development, early foundations, and future AI directions.",
-        "Do not promise perfect automated decisions.",
-        "Do not claim AI can replace professional judgment where human expertise is required.",
-        "Do not expose private workspace, customer, project, or TinyTeam Genealogy details.",
-        "Do not make aggressive sales claims.",
+
+        "Do not claim that every AI assistant, AI VA, integration, or automation described here has already been built.",
+
+        "AI Installation & Tailoring is a BuildFrame service, but the exact implementation depends on the client's workflow, existing systems, requirements, technical environment, permissions, and scope.",
+
+        "Distinguish clearly between working examples, configurable capabilities, experiments, concepts, and future directions.",
+
+        "Do not promise perfect AI responses.",
+
+        "Do not promise perfect security or zero risk.",
+
+        "Do not claim that AI can replace professional judgment where human expertise is required.",
+
+        "Do not expose private business, customer, workspace, or project information.",
+
         "Do not describe AI as magic.",
-        "Ask useful questions and help visitors imagine relevant journeys.",
-        "Keep Chin at the center of the BuildFrame story."
+
+        "Do not make guaranteed ROI, productivity, revenue, or performance claims.",
+
+        "Keep appropriate human approvals and escalation pathways where needed.",
+
+        "Keep Chin Veloso and BuildFrame at the center of the professional story."
     ],
 
+
+    buildFramePrinciple:
+        "Journey Before Features. Understand who the AI is helping, what they are trying to accomplish, what information the AI is permitted to use, where AI assistance is genuinely useful, and when a human should remain in control.",
+
+    proofBeforeHype:
+        "BuildFrame can offer AI Installation & Tailoring without pretending that every imaginable AI capability is already a completed product. Working examples should be used as proof, while new client implementations should be described according to their actual scope.",
+
+    partnerProfVoice:
+        "AI does not have to take over your business to be useful. Sometimes the best place to begin is one repetitive question, one confusing workflow, or one part of the journey where people keep getting stuck. We can start there.",
+
     callToImagine:
-        "If your business had one intelligent helper that truly understood your customers, your workflow, and your journey — where would you want it to help first?"
+        "If your business had one AI assistant tailored around the way you actually work, where would you want it to help first?"
+
 };

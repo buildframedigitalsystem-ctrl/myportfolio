@@ -211,7 +211,17 @@ window.BuildFrameAIRouter = {
                 "wholesale",
                 "dashboard",
                 "reports",
-                "admin"
+                "admin",
+                "staff",
+                "business overview",
+                "business performance",
+                "track performance",
+                "important updates",
+                "operational updates",
+                "business visibility",
+                "owner visibility",
+                "see everything in one place",
+                "one place where i can see"
             ]
         },
         {
@@ -237,7 +247,42 @@ window.BuildFrameAIRouter = {
                 "auto reply"
             ]
         },
+
         {
+            id: "backend-strengthening",
+            label: "Backend Strengthening & Integration",
+            knowledgeKey: "backendStrengthening",
+            globalName: "BuildFrameBackendStrengthening",
+            keywords: [
+                "backend",
+                "backend strengthening",
+                "existing software",
+                "existing system",
+                "already use",
+                "replace it",
+                "replace software",
+                "replace system",
+                "keep what works",
+                "integration",
+                "integrations",
+                "integrate",
+                "api",
+                "apis",
+                "data flow",
+                "validation",
+                "permissions",
+                "approval",
+                "approvals",
+                "safeguards",
+                "connected systems",
+                "disconnected systems",
+                "strengthen",
+                "strengthening"
+            ]
+        },
+
+        {
+
             id: "client-portals",
             label: "Client Portals",
             knowledgeKey: "clientPortals",

@@ -1061,3 +1061,103 @@ footer {
         bottom: 14px;
     }
 }
+
+/* =====================================================
+   BUILDFRAME PORTFOLIO
+   MOBILE PORTRAIT DISPLAY FIX
+   Desktop and landscape layouts remain unchanged.
+===================================================== */
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+    /* Prevent content from exceeding phone width */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    /* Main content */
+    .main-page,
+    main {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    /* Make the hero section use one column */
+    .hero-grid,
+    .hero-layout,
+    .hero-content,
+    .hero-wrap,
+    .hero-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        gap: 28px;
+    }
+
+    /* Allow hero children to shrink */
+    .hero-grid>*,
+    .hero-layout>*,
+    .hero-content>*,
+    .hero-wrap>*,
+    .hero-inner>* {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    /* Comfortable headline size */
+    .hero h1,
+    .hero-title,
+    .hero-content h1,
+    .hero-copy h1 {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+        line-height: 1.15;
+        letter-spacing: -0.025em;
+        overflow-wrap: break-word;
+    }
+
+    /* Readable description */
+    .hero p,
+    .hero-description,
+    .hero-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+    /* Prevent images from overflowing */
+    .hero img,
+    .hero video {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Full-width buttons */
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Maintain comfortable side spacing */
+    .hero .container,
+    .hero .bf-container {
+        width: calc(100% - 32px);
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

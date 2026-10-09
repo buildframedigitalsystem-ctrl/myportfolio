@@ -13,7 +13,7 @@ window.BuildFrameSurveysPlatform = {
         "A survey platform and app-style workspace where questionnaires, respondents, answers, charts, analytics, reports, exports, tutorials, and mobile-friendly response journeys work together as one guided answer-to-insight system.",
 
     experienceStory:
-        "Imagine creating a questionnaire, sharing it with respondents, collecting answers from phones or desktops, reviewing sessions, seeing charts, exporting Excel files, preparing PDF-ready reports, and guiding users through video, audio, written, and visual tutorials.",
+        "Yes. BuildFrame can help plan and build a Surveys & Insights system around your actual workflow. It could let you create questionnaires, collect responses from phones or computers, review individual answers and response sessions, view charts, export records, and prepare report-ready information.",
 
     bestFor: [
         "Customer surveys",

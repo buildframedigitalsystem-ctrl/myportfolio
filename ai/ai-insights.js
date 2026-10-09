@@ -44,40 +44,97 @@ window.BuildFrameAIInsights = {
             id: "manual-work",
             name: "Manual Work Friction",
             signals: [
+                "manual",
+                "manually",
+                "handled manually",
+                "doing manually",
+                "done manually",
                 "we do this manually",
+                "manual process",
+                "manual processes",
+                "manual work",
+                "repetitive",
+                "repetitive work",
+                "repeated task",
+                "repeated tasks",
                 "we use notebooks",
+                "notebook",
+                "paper records",
+                "spreadsheets",
+                "spreadsheet",
                 "we use spreadsheets for everything",
+                "copying data",
                 "we keep copying data",
-                "we send the same message repeatedly",
-                "we update records one by one"
+                "same message repeatedly",
+                "send the same message",
+                "follow up manually",
+                "follow-ups manually",
+                "manual follow-up",
+                "manual follow-ups",
+                "update records one by one",
+                "records one by one"
             ],
             insight:
-                "Repeated manual work may be a sign that records, forms, statuses, notifications, or workflows should become part of one connected system."
+                "Manual or repetitive work may indicate an opportunity to improve the workflow through better structure, connected records, automation, AI assistance, backend strengthening, or tailored business software. The existing process should be understood before deciding what should be automated or replaced."
         },
+
         {
             id: "scattered-records",
             name: "Scattered Records",
             signals: [
                 "records are everywhere",
+                "information is everywhere",
+                "details are everywhere",
+                "different places",
+                "separate places",
+                "stored in different places",
+                "kept in different places",
                 "different spreadsheets",
+                "multiple spreadsheets",
                 "messages in messenger",
+                "messenger",
+                "orders in messenger",
                 "orders in chat",
+                "orders through messenger",
+                "customer details",
+                "customer records",
+                "customer history",
                 "cannot find customer history",
+                "payment records",
+                "payments in different places",
+                "orders in different places",
+                "hard to keep track",
+                "difficult to keep track",
+                "keep track of everything",
+                "scattered",
+                "disconnected records",
                 "lost records"
             ],
             insight:
-                "The business may benefit from a central workspace, database, dashboard, client portal, or operating system where records belong to a clear journey."
+                "When customer details, orders, payments, messages, or other records are scattered across different places, the business may benefit from a clearer connected workflow and central place for important records. The first step is understanding where the information currently comes from and how it moves through the business."
         },
+
         {
+
             id: "visibility-gap",
             name: "Owner Visibility Gap",
             signals: [
-                "I do not know what is happening",
-                "I need reports",
-                "I need analytics",
-                "I want charts",
-                "I need a dashboard",
-                "I cannot track performance"
+                "do not know what is happening",
+                "don't know what is happening",
+                "don't always know what is happening",
+                "cannot see what is happening",
+                "can't see what is happening",
+                "need reports",
+                "need analytics",
+                "want charts",
+                "need a dashboard",
+                "one place where i can see",
+                "see important updates",
+                "track performance",
+                "cannot track performance",
+                "can't track performance",
+                "business overview",
+                "see everything in one place"
             ],
             insight:
                 "The owner may need a control-room experience where important records become summaries, charts, reports, statuses, and actionable views."
@@ -251,13 +308,20 @@ window.BuildFrameAIInsights = {
             type.signals.forEach((signal) => {
                 const normalizedSignal = this.normalizeText(signal);
 
-                if (
-                    normalizedSignal &&
-                    normalizedMessage.includes(normalizedSignal)
-                ) {
-                    score += normalizedSignal.includes(" ") ? 3 : 1;
-                    matchedSignals.push(signal);
+                if (normalizedSignal) {
+                    const messageWords = normalizedMessage.split(" ");
+                    const isMultiWord = normalizedSignal.includes(" ");
+
+                    const isMatch = isMultiWord
+                        ? normalizedMessage.includes(normalizedSignal)
+                        : messageWords.includes(normalizedSignal);
+
+                    if (isMatch) {
+                        score += isMultiWord ? 3 : 1;
+                        matchedSignals.push(signal);
+                    }
                 }
+
             });
 
             if (score > 0) {
